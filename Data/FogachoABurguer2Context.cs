@@ -13,4 +13,6 @@ using FogachoABurguer2.Models;
         }
 
         public DbSet<FogachoABurguer2.Models.Burguer> Burguer { get; set; } = default!;
+
+public DbSet<FogachoABurguer2.Models.Promo> Promo { get; set; } = default!;
     }
