@@ -1,4 +1,8 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<FogachoABurguer2Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("FogachoABurguer2Context") ?? throw new InvalidOperationException("Connection string 'FogachoABurguer2Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
