@@ -1,4 +1,4 @@
-namespace FogachoABurguer2.Models
+﻿namespace FogachoABurguer2.Models
 {
     public class ErrorViewModel
     {
